@@ -1,0 +1,10 @@
+# Example irsea configuration file, please copy this to irsea.yml and change
+# these settings accordingly
+
+# == Site appearance
+
+# Site name, used in various places
+site_name: irsea
+
+# Theme selection
+theme: default
