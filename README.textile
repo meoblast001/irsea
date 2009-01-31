@@ -1,3 +1,18 @@
 h1. IRSea
+
 h2. merb-powered quote database
 
+IRSea is a simple quote database application written in ruby and using the
+merb web framework.
+
+h3. Installation
+
+TODO: Describe installation
+  
+h3. Configuration
+
+TODO: Detail configuration steps
+
+h3. Usage
+
+TODO: Give basic walkthrough
