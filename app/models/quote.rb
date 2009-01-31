@@ -1,3 +1,8 @@
+# irsea - quote.rb
+# Author    :: Stefan Nuxoll
+# License   :: BSD License
+# Copyright :: Copyright (C) 2009 Stefan Nuxoll
+
 # irsea quote
 class Quote
   include DataMapper::Resource

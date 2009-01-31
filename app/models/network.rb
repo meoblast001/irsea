@@ -1,3 +1,8 @@
+# irsea - network.rb
+# Author    :: Stefan Nuxoll
+# License   :: BSD License
+# Copyright :: Copyright (C) 2009 Stefan Nuxoll
+
 class Network
   include DataMapper::Resource
   

@@ -1,3 +1,8 @@
+# irsea - rack.rb
+# Author    :: Stefan Nuxoll
+# License   :: BSD License
+# Copyright :: Copyright (C) 2009 Stefan Nuxoll
+
 # use PathPrefix Middleware if :path_prefix is set in Merb::Config
 if prefix = ::Merb::Config[:path_prefix]
   use Merb::Rack::PathPrefix, prefix

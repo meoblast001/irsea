@@ -1,1 +1,3 @@
-h1. IRSea Quote Database
+h1. IRSea
+h2. merb-powered quote database
+

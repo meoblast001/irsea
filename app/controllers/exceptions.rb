@@ -1,3 +1,8 @@
+# irsea - exceptions.rb
+# Author    :: Stefan Nuxoll
+# License   :: BSD License
+# Copyright :: Copyright (C) 2009 Stefan Nuxoll
+
 class Exceptions < Merb::Controller
   
   # handle NotFound exceptions (404)

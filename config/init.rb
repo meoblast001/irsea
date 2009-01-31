@@ -1,4 +1,7 @@
-# Go to http://wiki.merbivore.com/pages/init-rb
+# irsea - init.rb
+# Author    :: Stefan Nuxoll
+# License   :: BSD License
+# Copyright :: Copyright (C) 2009 Stefan Nuxoll
  
 require 'config/dependencies.rb'
  

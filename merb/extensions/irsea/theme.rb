@@ -18,9 +18,9 @@ module IRSea
       merb_stylesheet_dir = File.join(Merb.dir_for(:stylesheet), "theme")
       
       # Setup image and javascript directories
-      File.delete(merb_image_dir) if File.exists? merb_image_dir
+      File.delete(merb_image_dir) if File.symlink? merb_image_dir
       
-      File.delete(merb_javascript_dir) if File.exists? merb_javascript_dir
+      File.delete(merb_javascript_dir) if File.symlink? merb_javascript_dir
       
       FileUtils.rm_rf(merb_stylesheet_dir) if File.exists? merb_stylesheet_dir
         

@@ -1,3 +1,8 @@
+# irsea - comment.rb
+# Author    :: Stefan Nuxoll
+# License   :: BSD license
+# Copyright :: Copyright (C) 2009 Stefan Nuxoll
+
 class Comment
   include DataMapper::Resource
   

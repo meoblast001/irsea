@@ -1,8 +1,12 @@
-# dependencies are generated using a strict version, don't forget to edit the dependency versions when upgrading.
+# irsea - dependencies.rb
+# Author    :: Stefan Nuxoll
+# License   :: BSD License
+# Copyright :: Copyright (C) 2009 Stefan Nuxoll
+
+# Merb stack dependencies
 merb_gems_version = "1.0.8.1"
 dm_gems_version   = "0.9.8"
 
-# For more information about each component, please read http://wiki.merbivore.com/faqs/merb_components
 dependency "merb-action-args",         merb_gems_version
 dependency "merb-assets",              merb_gems_version  
 dependency "merb-cache",               merb_gems_version   

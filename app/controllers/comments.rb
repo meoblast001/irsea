@@ -1,3 +1,8 @@
+# irsea - comments.rb
+# Author    :: Stefan Nuxoll
+# License   :: BSD License
+# Copyright :: Copyright (C) 2009 Stefan Nuxoll
+
 class Comments < Application
 
   # Action for comment submission form
