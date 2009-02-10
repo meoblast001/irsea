@@ -21,7 +21,7 @@ module Merb
     
     # Helper to generate the title variables
     def page_title(text)
-      @html_title = "#{IRSea::Config["site_title"]} | #{text}"
+      @html_title = "#{IRSea::Config["site_name"]} | #{text}"
       @page_title = text
     end
     
