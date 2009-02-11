@@ -41,8 +41,11 @@ class Quote
       # trust people to alway use common sense and just mark a quote as deleted
       # instead of DROP'ing the row
       unless Quote and Quote.deleted == true
-        quotes << Quote.get(qid)
-        selected += 1
+        quote = Quote.get(qid)
+        if quote != nil
+          quotes << quote
+          selected += 1
+        end
       end
     end
     
