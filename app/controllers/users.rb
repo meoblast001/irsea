@@ -36,5 +36,29 @@ class Users < Application
       render :new
     end
   end
-
+  
+  # Show the user control panel
+  def edit(id)
+    @user = User.get(id)
+    if not @user == session.user
+    
+    else
+      redirect "/",
+        :message =>
+          {:error => "Hey, that isn't you!  Stop trying to be naughty!"}
+    end
+  end
+  
+  # Preforms the update of a user account
+  def update(id)
+    @user = User.get(id)
+    if not @user == session.user
+    
+    else
+      redirect "/",
+        :message =>
+          {:error => "Hey, that isn't you!  Stop trying to be naughty!"}
+    end
+  end
+  
 end
