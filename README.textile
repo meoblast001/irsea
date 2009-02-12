@@ -7,8 +7,10 @@ merb web framework.
 
 h3. Installation
 
+h4. Dependencies
+
 TODO: Describe installation
-  
+
 h3. Configuration
 
 TODO: Detail configuration steps

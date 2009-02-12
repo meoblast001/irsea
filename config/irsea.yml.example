@@ -1,10 +1,25 @@
-# Example irsea configuration file, please copy this to irsea.yml and change
-# these settings accordingly
+## Example irsea configuration file, please copy this to irsea.yml and change
+## these settings accordingly
 
-# == Site appearance
+## == Site appearance
 
-# Site name, used in various places
+## Site name, used in various places
 site_name: irsea
 
-# Theme selection
+## Theme selection
 theme: default
+
+## == Other site configuration
+
+## Fully qualified root to the site, this must be set for RSS feeds (and
+## possibly other things) to work properly
+site_url: http://irsea.mysite.com
+
+## Site description that will be used in generated RSS feeds, and possibly by
+## your theme, uncomment and change this line to set the description, if you do
+## not the default will be used
+# site_desc: Site description goes here
+
+## ISO language code for the site, if this is not set a default of en_us will
+## be assumed
+# site_lang: en_us

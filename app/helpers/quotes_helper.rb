@@ -5,5 +5,8 @@
 
 module Merb
   module QuotesHelper
+    def rss_url(quote)
+      "#{IRSea::Config["site_url"]}#{resource(quote)}"
+    end
   end
 end # Merb

@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title><![CDATA[<%= "#{IRSea::Config["site_name"]} | Recent Quotes" %>]]></title>
+    <link><![CDATA[<%= IRSea::Config["site_url"] %>]]></link>
+    <description><![CDATA[<%= IRSea::Config["site_description"] || IRSea::DEFAULT_DESC %>]]></description>
+    <language><![CDATA[<%= IRSea::Config["site_language"] || IRSea::DEFAULT_LANG %>]]></language>
+    <% @quotes.each do |quote| %>
+    <item>
+      <title><![CDATA[<%= quote.title %>]]></title>
+      <link><![CDATA[<%= rss_url quote %>]]></link>
+      <description><![CDATA[<%= escape_html(quote.text).gsub(/\n/, "<br />") %>]]></description>
+      <dc:creator><![CDATA[<% if quote.user %><%= quote.user.login %><% else %>Anonymous<% end %>]]>
+      </dc:creator>
+      <dc:date><![CDATA[<%= quote.posted.strftime("%Y-%m-%d") %>]]></dc:date>
+    </item>
+    <% end %>
+  </channel>
+</rss> 

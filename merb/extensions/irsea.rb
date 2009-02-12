@@ -6,4 +6,6 @@
 module IRSea
   require "merb/extensions/irsea/config.rb"
   require "merb/extensions/irsea/theme.rb"
+  require "merb/extensions/irsea/defaults.rb"
+  include IRSea::Defaults
 end
