@@ -5,7 +5,7 @@
 
 # Merb stack dependencies
 merb_gems_version = "1.0.8.1"
-dm_gems_version   = "0.9.8"
+dm_gems_version   = "0.9.10"
 
 dependency "merb-action-args",         merb_gems_version
 dependency "merb-assets",              merb_gems_version  
@@ -31,3 +31,4 @@ dependency "dm-validations", dm_gems_version
 
 require "redcloth"
 require "sanitize"
+require "merb-theme"
