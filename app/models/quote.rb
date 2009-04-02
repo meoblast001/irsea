@@ -28,7 +28,8 @@ class Quote
   end
   
   # Returns a set of random quotes, an optional count may be specified.  Quotes
-  # are not guaranteed to be unique.
+  # are guaranteed to be unique.
+  # This could be made more efficient.
   # @param [Integer] return_count Number of quotes to return
   def self.random(return_count = 10)
     quotes = []
@@ -42,7 +43,7 @@ class Quote
       # instead of DROP'ing the row
       unless Quote and Quote.deleted == true
         quote = Quote.get(qid)
-        if quote != nil
+        if quote != nil and quotes.index(quote)
           quotes << quote
           selected += 1
         end
