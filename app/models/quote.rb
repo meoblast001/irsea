@@ -36,7 +36,7 @@ class Quote
     quote_count = Quote.count
     selected = 0
     
-    while selected < return_count do
+    while selected < [return_count, quote_count].min do
       qid = 1+rand(quote_count)
       # Ensure the quote exists and isn't marked as deleted, since we can't
       # trust people to alway use common sense and just mark a quote as deleted
