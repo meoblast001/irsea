@@ -6,9 +6,6 @@
 ## Site name, used in various places
 site_name: irsea
 
-## Theme selection
-theme: default
-
 ## == Other site configuration
 
 ## Fully qualified root to the site, this must be set for RSS feeds (and
