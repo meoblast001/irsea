@@ -16,7 +16,7 @@ module Merb
     
     # Before filter to initialize variables commonly used in the application
     def setup
-      @quote_count = Quote.count
+      @quote_count = Quote.all(:deleted.not => true).count
     end
     
     # Helper to generate the title variables
