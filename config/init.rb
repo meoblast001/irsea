@@ -27,8 +27,6 @@ Merb::BootLoader.before_app_loads do
   end
   # Load the irsea configuration
   IRSea::Config.load
-  # Initialize the application theme
-  IRSea::Theme.init
 end
  
 Merb::BootLoader.after_app_loads do
