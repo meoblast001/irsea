@@ -24,7 +24,7 @@ class Quote
   belongs_to :channel
 
   def self.recent
-    all(:limit => 10, :order => [:posted.desc])
+    all(:limit => 10, :order => [:posted.desc], :deleted.not => true)
   end
   
   # Returns a set of random quotes, an optional count may be specified.  Quotes
