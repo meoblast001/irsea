@@ -18,3 +18,7 @@ TODO: Detail configuration steps
 h3. Usage
 
 TODO: Give basic walkthrough
+
+h3. Find more contributors
+
+TODO: Find more contributors so irsea will be over 9000

@@ -28,21 +28,22 @@ class Quote
   end
   
   # Returns a set of random quotes, an optional count may be specified.  Quotes
-  # are not guaranteed to be unique.
+  # are guaranteed to be unique.
+  # This could be made more efficient.
   # @param [Integer] return_count Number of quotes to return
   def self.random(return_count = 10)
     quotes = []
     quote_count = Quote.count
     selected = 0
     
-    while selected < return_count do
+    while selected < [return_count, quote_count].min do
       qid = 1+rand(quote_count)
       # Ensure the quote exists and isn't marked as deleted, since we can't
       # trust people to alway use common sense and just mark a quote as deleted
       # instead of DROP'ing the row
       unless Quote and Quote.deleted == true
         quote = Quote.get(qid)
-        if quote != nil
+        if quote != nil and quotes.index(quote)
           quotes << quote
           selected += 1
         end
