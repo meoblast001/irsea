@@ -8,6 +8,7 @@ class Network
   
   property :id, Serial
   property :name, String, :length => 64
+  property :user_network, Boolean, :default => false
   
   has n, :channels
   has n, :quotes

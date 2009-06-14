@@ -43,8 +43,18 @@ class Quotes < Application
 
   # Quote creation action
   def create(quote)
-      quote["network"] = Network.get(quote["network"])
-      network = quote["network"]
+      if quote ["network"] == "other"
+        if IRSea::Config["user_networks"] == true
+          network = Network.new;
+          network.name = quote["network_name"];
+          network.user_made = true;
+        else
+          raise NotAcceptable
+        end
+      else
+        network = quote["network"]
+      end
+      quote["network"] = network
       # Check to see if a channel exists in the database, if not, create it
       channel = network.channels.first(:name => quote["channel"].downcase)
       if not channel
